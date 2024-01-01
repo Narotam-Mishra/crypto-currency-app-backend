@@ -23,7 +23,6 @@ describe('getCryptoCurrencies', () => {
     const mockResponse = [
       { id: 'bitcoin', name: 'Bitcoin', market_cap: 1000000000 },
       { id: 'ethereum', name: 'Ethereum', market_cap: 500000000 },
-      // Add more sample data as needed
     ];
 
     mock.onGet('https://api.coingecko.com/api/v3/coins/markets').reply(200, mockResponse);

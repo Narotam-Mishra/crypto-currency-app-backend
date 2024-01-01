@@ -34,7 +34,7 @@ describe('getExchangeRate', () => {
         vs_currencies: 'usd',
       },
     }).reply(200, {
-      bitcoin: { usd: 50000 }, // Set a sample exchange rate
+      bitcoin: { usd: 50000 },
     });
 
     await getExchangeRate(req, res);
